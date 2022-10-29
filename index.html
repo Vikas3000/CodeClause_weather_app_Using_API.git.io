@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather app</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<nav class="navbar">
+  <div class="date-container">
+    <div class="time" id="time"></div>
+    <div class="date" id="date"></div>
+    <div class="another" id="Present-weather"></div>
+    <div class="current-info-container">
+      <div class="time-zone" id="time-zone"> Location</div>
+      <div id="nation" class="nation">India</div>
+    </div>
+  </div>
+  </div>
+</nav>
+<body>
+  <div class="main-container">
+    <div class="search"> <input type="text" class="search-bar" placeholder="Search">
+      <button><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1.5em"
+          width="1.5em" xmlns="http://www.w3.org/2000/svg"><path 
+            d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z">
+          </path>
+        </svg></button>
+    </div>
+  </div>
+  <div class="other-forecast">
+    <div class="today" id="current-temp">
+      <img
+        src="https://www.transparentpng.com/thumb/weather-report/sun-cloud-rain-water-lightning-weather-report-png-0.png "
+        alt="weather icon" class="wthr-icon">
+      <div class="other">
+        <div class="day">Today</div>
+        <div class="temp">Day - 30&#176;C</div>
+        <div class="temp">Night - 20&#176;C</div>
+      </div>
+      <div class="Currently" id="Todays-Whather">
+        <div class="humid">
+          <div>Humidity</div>
+          <div>80%</div>
+        </div>
+        <div class="pressure">
+          <div>Pressure</div>
+          <div>105</div>
+        </div>
+        <div class="windSpeed">
+          <div>Wind Speed</div>
+          <div>100</div>
+        </div>
+      </div>
+    </div>
+    <div class="weather-forecast" id="wheather-report">
+      <div class="weather-forecast-item">
+        <div class="day">Sun</div>
+        <img
+          src="https://www.transparentpng.com/thumb/weather-report/sun-cloud-rain-water-lightning-weather-report-png-0.png "
+          alt="weather icon" class="wthr-icon">
+        <div class="temp">Day - 29&#176;C</div>
+        <div class="temp">Night - 16&#176;C</div>
+      </div>
+      <div class="weather-forecast-item">
+        <div class="day">Mon</div>
+        <img
+          src="https://www.transparentpng.com/thumb/weather-report/sun-cloud-rain-water-lightning-weather-report-png-0.png "
+          alt="weather icon" class="wthr-icon">
+        <div class="temp">Day - 30&#176;C</div>
+        <div class="temp">Night - 19&#176;C</div>
+      </div>
+      <div class="weather-forecast" id="weather-report">
+        <div class="weather-forecast-item">
+          <div class="day">Tue</div>
+          <img
+            src="https://www.transparentpng.com/thumb/weather-report/sun-cloud-rain-water-lightning-weather-report-png-0.png "
+            alt="weather icon" class="wthr-icon">
+          <div class="temp">Day - 28&#176;C</div>
+          <div class="temp">Night - 20&#176;C</div>
+        </div>
+        <div class="weather-forecast-item">
+          <div class="day">Wed</div>
+          <img
+            src="https://www.transparentpng.com/thumb/weather-report/sun-cloud-rain-water-lightning-weather-report-png-0.png "
+            alt="weather icon" class="wthr-icon">
+          <div class="temp">Day - 28&#176;C</div>
+          <div class="temp">Night - 18&#176;C</div>
+        </div>
+        <div class="weather-forecast-item">
+          <div class="day">Thu</div>
+          <img
+            src="https://www.transparentpng.com/thumb/weather-report/sun-cloud-rain-water-lightning-weather-report-png-0.png "
+            alt="weather icon" class="wthr-icon">
+          <div class="temp">Day - 30&#176;C</div>
+          <div class="temp">Night - 19&#176;C</div>
+        </div>
+        <div class="weather-forecast-item">
+          <div class="day">Fri</div>
+          <img src="https://www.transparentpng.com/thumb/weather-report/sun-cloud-rain-water-lightning-weather-report-png-0.png "
+            alt="weather icon" class="wthr-icon">
+          <div class="temp">Day - 25&#176;C</div>
+          <div class="temp">Night - 22&#176;C</div>
+        </div>
+        <div class="weather-forecast-item">
+          <div class="day">Sat</div>
+          <img
+            src="https://www.transparentpng.com/thumb/weather-report/sun-cloud-rain-water-lightning-weather-report-png-0.png "
+            alt="weather icon" class="wthr-icon">
+          <div class="temp">Day - 29&#176;C</div>
+          <div class="temp">Night - 18&#176;C</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/Script.js"></script>
+</body>
+
+</html>
